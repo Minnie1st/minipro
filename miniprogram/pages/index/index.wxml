@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="title">今天吃什么？</view>
+  
+  <view class="result {{isAnimating ? 'animating' : ''}}" style="opacity: {{resultOpacity}}; transform: scale({{resultScale}})">
+    {{currentFood || '点击下方按钮开始'}}
+  </view>
+  
+  <view class="button" bindtap="randomFood">
+    {{isAnimating ? '正在选择...' : '换一个'}}
+  </view>
+</view>

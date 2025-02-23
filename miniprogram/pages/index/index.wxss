@@ -1,0 +1,27 @@
+/* pages/index/index.wxss */
+
+.result.animating {
+  animation: bounce 0.5s ease infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.result {
+  margin: 40rpx 0;
+  padding: 40rpx;
+  width: 80%;
+  min-height: 200rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 20rpx;
+  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.1);
+}
